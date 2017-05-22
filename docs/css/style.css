@@ -29,7 +29,7 @@ sky {
 }
 
 plateau {
-    background-image: url(../images/plateau.png);
+    background-image: url(../images/dirt.png);
     background-repeat: repeat-x;
     width:1600px; height:331px;
     animation: plateauanimation 3.4s linear infinite;
@@ -39,18 +39,14 @@ plateau {
     animation-play-state: paused;
 }
 
-car {
-    background-image: url(../images/car.png);
-    width:145px; height: 55px;
+player {
+    background-image: url(../images/Character.gif);
+    width:60px; height:128px;
 }
 
 .crashed {
-    background-image: url(../images/crash.png);
-}
-
-wheel {
-    background-image: url(../images/wheel.png);
-    width:22px; height: 22px;
+    background-image: url(../images/dead.png);
+    width:128px; height:128px;
 }
 
 cloud {
@@ -59,8 +55,15 @@ cloud {
     animation: cloudanimation 19s linear infinite;
 }
 
+score {
+    z-index: 5;
+    color:white;
+    font-size : 22px;
+    padding:20px;
+}
+
 block {
-    background-image: url(../images/block.png);
+    background-image: url(../images/enemy.gif);
     width:32px; height: 31px;
 }
 

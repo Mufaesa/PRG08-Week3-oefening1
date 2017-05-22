@@ -1,17 +1,21 @@
-class Block {
+/// <reference path="gameObject.ts"/>
+
+class Block extends gameObject {
 
     public speed:number;
     public div:HTMLElement;
     public x:number;
     public y:number;
             
-    constructor(parent:HTMLElement) {
-        this.div = document.createElement("block");
-        parent.appendChild(this.div);
+    constructor(parent:HTMLElement, x: number) {
+        super("block", parent, x, 240);
+
+
+        this.height = 31;
+        this.width = 32;
 
         this.speed = -4;
-        this.x = 800;
-        this.y = 240;
+   
     }
 
     public draw():void {

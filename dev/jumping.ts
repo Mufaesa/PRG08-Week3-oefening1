@@ -1,18 +1,18 @@
 class Jumping implements Behaviour{
 
-    private car:Car;
+    private player:Player;
     private jumpDirection: number;
 
-    constructor(c:Car){
-        this.car = c;
-        this.jumpDirection = -3;
+    constructor(p:Player){
+        this.player = p;
+        this.jumpDirection = -4;
     }
     draw(){
-        this.car.x += this.car.speed;
-        this.car.y += this.jumpDirection;
-        if (this.car.y < 140) this.jumpDirection = 3;
-        if (this.car.y > 217){
-            this.car.behaviour = new Crashing(this.car);
+        this.player.x += this.player.speed;
+        this.player.y += this.jumpDirection;
+        if (this.player.y < 50) this.jumpDirection = 4;
+        if (this.player.y > 140){
+            this.player.behaviour = new Running(this.player);
         } 
     }
 
