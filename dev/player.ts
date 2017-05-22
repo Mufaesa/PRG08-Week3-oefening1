@@ -9,7 +9,7 @@ class Player extends gameObject {
     public x: number;
     public y: number;
     private state: number;
-    public deadState: number = 0;
+    private deadState: number = 0;
 
     
 
