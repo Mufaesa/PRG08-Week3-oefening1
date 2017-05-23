@@ -32,3 +32,5 @@ Encapsulation wordt vrijwel in elk object gebruikt. Player heb ik 1 private vari
 get en set functie om aan te passen. Vooral Game heeft veel private methods en variabelen. Dit is ook omdat er weinig andere
 objecten iets van game hoeven te weten. De rest van de classes daarentegen hebben wel veel op public staan, juist zodat
 Game erbij kan.
+
+![ulm diagram](./class-diagram.PNG)
